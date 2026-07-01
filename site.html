@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Code</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        label {
+            color: white;
+            display: block;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        input[type="text"] {
+            display: block;
+            width: 280px;
+            padding: 10px 14px;
+            font-size: 16px;
+            border: 1px solid #555;
+            border-radius: 6px;
+            background-color: #1a1a1a;
+            color: white;
+            outline: none;
+            margin: 0 auto 16px auto;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4a90d9;
+        }
+
+        button {
+            padding: 10px 40px;
+            font-size: 16px;
+            background-color: #4a90d9;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #3a7bc8;
+        }
+
+        button:active {
+            background-color: #2d6ab0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="codeInput">input code</label>
+        <input type="text" id="codeInput" placeholder="Enter your code...">
+        <button type="button">Enter</button>
+    </div>
+</body>
+</html>
